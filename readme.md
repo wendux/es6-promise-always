@@ -16,7 +16,7 @@ axios.get("/").then(()=>{
 })
 ```
 
-不知你是怎么想的，这样的代码， 令我很不舒服，之前很多时候，在调ajax时都有点怀念jQuery：
+不知你是怎么想的，这样的代码， 很不优雅，之前很多时候，在调ajax时都有点怀念jQuery：
 
 ```javascript
 $.get("/").done(()=>{
@@ -27,7 +27,7 @@ $.get("/").done(()=>{
 })
 ```
 
-是时候该解决这个问题了！es6-promise-always正是对ES6的功能做了一个扩充，使其支持always，并同时node和browser.
+es6-promise-always正是对ES6的功能做了一个扩充，使其支持always，并同时支持node和browser.
 
 ## 使用
 
