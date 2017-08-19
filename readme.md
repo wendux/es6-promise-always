@@ -19,7 +19,7 @@ axios.get("/").then(()=>{
 不知你是怎么想的，这样的代码， 令我很不舒服，之前很多时候，在调ajax时都有点怀念jQuery：
 
 ```javascript
-$.get("/").then(()=>{
+$.get("/").done(()=>{
   //处理逻辑
 }).always(()=>{
   console.log("请求结束")
@@ -41,7 +41,7 @@ npm install es6-promise-always  --save
 
 ```javascript
 require("es6-promise-always")
-axios.get("/").done(()=>{
+axios.get("/").then(()=>{
   //处理逻辑
 }).always(()=>{
   console.log("请求结束")
